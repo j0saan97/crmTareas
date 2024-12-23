@@ -1,0 +1,1 @@
+// aqui estarán funciones auxiliares que ayduarán al buen funcionamiento de la app

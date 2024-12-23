@@ -1,0 +1,58 @@
+gestion-trabajos/
+│
+├── public/
+│   ├── index.html        # Página principal, generada dinámicamente
+│   ├── login.html        # Página de login
+│   ├── css/
+│   │   ├── main.css      # Estilos principales, enfocado en mobile-first
+│   │   
+│   └── js/
+│       ├── main.js       # Controlador principal del frontend
+│       ├── login.js      # Lógica de autenticación en el frontend
+│       ├── tareas.js     # Controlador de tareas para usuarios
+│       ├── admin.js      # Controlador de tareas para administradores
+│       ├── generadorHTML.js # Genera HTML dinámicamente
+│       ├── utils.js      # Funciones comunes/utilidades
+│       └── api.js        # Conexión con el backend
+│
+├── backend/
+│   ├── controllers/
+│   │   ├── authController.js   # Controlador para autenticación
+│   │   ├── tareaController.js  # Controlador de lógica para tareas
+│   │   └── usuarioController.js # Controlador de usuarios
+│   │
+│   ├── models/
+│   │   ├── Tarea.js            # Modelo para las tareas
+│   │   ├── Usuario.js          # Modelo para los usuarios
+│   │   └── Trabajador.js       # Modelo para los trabajadores
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js       # Rutas para login/logout
+│   │   ├── tareaRoutes.js      # Rutas para CRUD de tareas
+│   │   └── usuarioRoutes.js    # Rutas para la gestión de usuarios
+│   │
+│   ├── db/
+│   │   ├── database.js         # Configuración de la base de datos
+│   │   
+│   │
+│   ├── middleware/
+│   │   ├── authMiddleware.js   # Middleware para validar roles (usuario/admin)
+│   │   └── errorHandler.js     # Manejo de errores
+│   │
+│   ├── app.js                  # Configuración de la aplicación backend
+│   └── server.js               # Punto de entrada del servidor
+│
+├── tests/
+│   ├── frontend/
+│   │   ├── login.test.js       # Pruebas para login
+│   │   ├── tareas.test.js      # Pruebas de funcionalidad de tareas (frontend)
+│   │   
+│   │
+│   └── backend/
+│       ├── authController.test.js
+│       ├── tareaController.test.js
+│       └── usuarioController.test.js
+│
+├── package.json                # Configuración de dependencias y scripts del proyecto
+├── README.md                   # Documentación inicial
+└── .env                        # Configuración de variables de entorno
